@@ -58,6 +58,10 @@ Servir de vitrine professionnelle
 
 📄 Licence
 
-Ce projet est libre d’utilisation à des fins personnelles ou éducatives. Merci de ne pas copier le contenu sans autorisation.
+Ce dépôt est rendu public uniquement à des fins de consultation et de démonstration.
 
-© 2025 – Cyprien Bidaud
+Toute reproduction, copie, modification, redistribution ou appropriation,
+partielle ou totale, de ce projet est strictement interdite sans
+autorisation écrite préalable de l’auteur.
+
+© 2025 – Cyprien Bidaud. Tous droits réservés.
