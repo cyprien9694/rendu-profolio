@@ -1,0 +1,714 @@
+/* ============================
+   STYLE GLOBAL
+============================ */
+body {
+    background-color: #19191B !important;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+.ellipse {
+    top: 60px;
+    right: 70px;
+    width: 40px;
+}
+
+.ellipse1 {
+    top: 80px;
+    right: 60px;
+    width: 40px !important;
+}
+
+.ellipse2 {
+    top: 188px;
+    left: 6%;
+    width: 40px !important;
+}
+
+.ellipse3 {
+    top: 60px;
+    right: 60px;
+    width: 40px !important;
+}
+
+.ellipse4 {
+    top: 80px;
+    right: 50px;
+    width: 40px !important;
+}
+.ellipse-contact{
+    display: none;
+}
+
+.ellipse1-contact{
+    top: 104%;
+}
+.vector {
+    top: 60px;
+    right: 450px;
+    width: 40px !important;
+}
+
+.vector2 {
+    top: 67px;
+    left: 9%;
+}
+
+.poligon {
+    top: 485px;
+    right: 425px;
+    width: 40px !important;
+}
+
+.poligon1 {
+    top: 500px;
+    right: 420px;
+    width: 40px !important;
+}
+
+.poligon2 {
+    top: 50px;
+    left: 95px;
+    width: 40px !important;
+}
+
+.poligon3 {
+    top: 65px;
+    left: 100px;
+    width: 40px !important;
+}
+
+.add {
+    width: 40px;
+    top: 500px;
+    right: 80px;
+    width: 40px !important;
+}
+
+.add1 {
+    width: 40px !important;
+    right: 10%;
+    top: 10%;
+}
+
+.add2 {
+    width: 40px !important;
+    top: 20px;
+    right: 40px;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #5454D4 !important;
+}
+
+.btn-primary {
+    background: #5454D4;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #3573db;
+}
+
+.btn-secondary {
+    background: #19191B;
+    border-color: white;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background: #353535;
+    border-color: #5454D4;
+    color: #5454D4;
+}
+
+/* ============================
+   HERO
+============================ */
+#hero {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#hero img.position-absolute {
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ============================
+   ABOUT
+============================ */
+.about img {
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.about,
+h2 {
+    color: white;
+}
+
+.about,
+p {
+    color: grey;
+}
+
+.logo {
+    left: 21%;
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 400 / 550;
+    margin: 0 auto;
+    margin-top: 12%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transform: translate(-20px, -60px);
+    opacity: 0.7;
+}
+
+.shape--rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.profile {
+    position: absolute;
+    top: -108px;
+    left: -11px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+
+    -webkit-mask-image: url('./Images/Shape\ Colored.png');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-mode: alpha;
+
+    mask-image: url('./Images/Shape\ Colored.png');
+    mask-size: 112% 84%;
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-mode: alpha;
+    outline: 2px solid lime;
+}
+
+
+
+/* ============================
+   SERVICES
+============================ */
+#services .p-4 {
+    background-color: #19191B;
+    border-radius: 14px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+#services .p-4:hover {
+    background: #19191B;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+#services i {
+    color: #4c8dff;
+}
+
+#services .color-red {
+    color: #ff4c4c;
+}
+
+#services .color-yellow {
+    color: #ffcc00;
+}
+
+/* ============================
+   PROJECTS
+============================ */
+#projects {
+    position: relative;
+}
+
+#projects img.position-absolute {
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    background-color: #19191B;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+    color: black;
+    box-shadow: 0 0 25px rgba(76, 141, 255, 0.25);
+}
+
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* ============================
+   CONTACT
+============================ */
+#contact {
+    background: #19191B;
+    margin-bottom: 110px;
+    padding: 60px 0;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        width: 360px;
+        top: 15px;
+        left: -4%;
+    }
+
+    .profile {
+        height: 92%;
+    }
+
+    .container {
+        max-width: 800px;
+    }
+
+    .ellipse {
+        width: 40px !important;
+        right: 23%;
+        top: 49px;
+    }
+
+    .ellipse1 {
+        width: 40px !important;
+        right: 22%;
+        top: 66px;
+    }
+
+    .ellipse3 {
+        top: 35px;
+        right: 19%;
+        width: 40px !important;
+    }
+
+    .ellipse4 {
+        top: 51px;
+        right: 18%;
+        width: 40px !important;
+    }
+
+    .vector {
+        width: 40px !important;
+        right: 53%;
+        top: 49px;
+    }
+
+    .poligon {
+        width: 40px !important;
+        right: 53%;
+        top: 57%;
+    }
+
+    .poligon1 {
+        width: 40px !important;
+        right: 53%;
+        top: 59%;
+    }
+
+    .add {
+        width: 40px !important;
+        right: 20%;
+        top: 60%;
+    }
+
+    .add1 {
+        width: 40px !important;
+        right: 16%;
+        top: 10%;
+    }
+
+    .add2 {
+        width: 40px !important;
+        top: 10%;
+        right: 18%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 870px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+
+    /* ---------- LOGO ---------- */
+    .logo {
+        max-width: 300px;
+        margin-top: 10%;
+        left: 0;
+    }
+
+    .profile {
+        top: -70px;
+        left: -6px;
+        mask-size: 110% 84%;
+    }
+
+
+    .ellipse {
+        width: 28px !important;
+        top: 41%;
+        right: 18%;
+    }
+
+    .ellipse1 {
+        width: 28px !important;
+        top: 43%;
+        right: 17%;
+    }
+
+    .vector {
+        width: 28px !important;
+        top: 42%;
+        right: 81%;
+    }
+
+    .poligon {
+        width: 28px !important;
+        top: 71%;
+        right: 77.5%;
+    }
+
+    .poligon1 {
+        width: 28px !important;
+        top: 72%;
+        right: 77%;
+    }
+
+    .add {
+        width: 28px !important;
+        top: 72%;
+        left: 80% !important;;
+    }
+
+    .ellipse3 {
+        width: 28px !important;
+        top: 45px;
+        right: 18%;
+    }
+
+    .ellipse4 {
+        width: 28px !important;
+        top: 60px;
+        right: 17%;
+    }
+
+    .vector2 {
+        width: 28px !important;
+        top: 67px;
+        left: 9%;
+    }
+
+    .add1 {
+        right: 2%;
+    }
+
+    .ellipse-contact {
+        width: 28px !important;
+
+        top: 100%
+    }
+
+    .ellipse1-contact {
+        width: 28px !important;
+        left: 3%;
+
+        top: 106%
+    }
+
+    .add2 {
+        right: 3%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding: 0px 27px;
+    }
+
+    .logo {
+        max-width: 220px;
+        margin-top: 20%;
+        margin-right: 24px;
+    }
+
+    .profile {
+        top: -38px;
+        left: -2px;
+        mask-size: 103% 84%;
+    }
+
+    .row {
+        padding: 0px;
+    }
+
+    .navbar-nav {
+        align-items: flex-end;
+    }
+
+    #hero {
+        padding-bottom: 0px !important;
+    }
+
+    .ellipse {
+        width: 20px !important;
+        top: 55%;
+        right: 15%;
+    }
+
+    .ellipse1 {
+        width: 20px !important;
+        top: 56%;
+        right: 14%;
+    }
+
+    .vector {
+        width: 20px !important;
+        top: 55%;
+        left: 20%;
+    }
+
+    .poligon {
+        width: 20px !important;
+        top: 90%;
+        left: 20%;
+    }
+
+    .poligon1 {
+        width: 20px !important;
+        top: 91%;
+        left: 21%;
+    }
+
+    .add {
+        top: 90%;
+        width: 20px !important;
+        left: 80%;
+
+    }
+
+    .poligon2 {
+        width: 20px !important;
+    }
+
+    .poligon3 {
+        width: 20px !important;
+        top: 7%;
+    }
+
+    .add2 {
+        top: 5%;
+        right: 6%;
+    }
+
+    .ellipse3 {
+        width: 20px !important;
+        top: 4%;
+    }
+
+    .ellipse4 {
+        width: 20px !important;
+    }
+
+    .vector2 {
+        width: 20px !important;
+        left: 13%;
+        top: 5%;
+    }
+
+    .add1 {
+        width: 20px !important;
+        right: 5%;
+
+    }
+
+    .ellipse-contact {
+        display: inline;
+        width: 20px !important;
+        top: 99% !important;
+        left: 9% !important;
+        bottom: -10% !important;
+    }
+
+    .ellipse1-contact {
+        width: 20px !important;
+        left: 10%;
+        bottom: -10%;
+    }
+}
+
+/* ===========================
+    FORMES GÉNÉRALES
+=========================== */
+.shape {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+/* tailles */
+.shape--large {
+    width: 40px;
+}
+
+.shape--medium {
+    width: 32px;
+}
+
+.shape--small {
+    width: 25px;
+}
+
+.shape--tiny {
+    width: 13px;
+}
+
+/* triangles spécifiques */
+.shape--triangle {
+    width: 32px;
+}
+
+.shape--triangle-small {
+    width: 22px;
+}
+
+/* ===========================
+    ANIMATIONS
+=========================== */
+
+.shape--float {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.shape--spin {
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.shape--pulse {
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
